@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 07</title>
+</head>
+<body>
+    <script>
+        const peso = parseFloat(prompt('Informe seu peso: '))
+        const alt = parseFloat(prompt('Informe sua altura: '))
+        const imc = peso / (alt ** 2)
+
+        if (imc <= 18.5){
+            alert("Você esta abaixo do peso")
+        }
+        else if (imc > 18.5 && imc <= 25){
+            alert('Você esta na faixa normal de peso')
+        }
+        else if ( imc > 25 && imc <= 30){
+            alert('Você esta acima do peso')
+        }
+        else{
+            alert('Você esta obeso')
+        }
+    </script>
+</body>
+</html>
